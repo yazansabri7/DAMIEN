@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+:root{
+    --mainfont: "Manrope", sans-serif;
+}
+.testemonial .testemonials-section .testmnial-section.active12{
+    display: flex !important;
+}
+.testemonial .testemonials-section  .testmnial-section.none{
+    display: none !important;
+}
+
+body{
+    
+   background-color:#000;
+   color: #fff;
+   font-family: var(--mainfont);
+}
+
+.nav-link.active{
+    background-color: #131316;
+    border-radius: 10px;
+    padding:10px 20px;
+}
+nav .contact{
+    background-color: #1C1C21;
+    padding:  15px 20px;
+    border-radius: 10px;
+
+}
+nav .contact a{
+    color: #fff;
+
+}
+
+.about-damien{
+    top: 2%;
+}
+.insight{
+    top: 16%;
+
+}
+.insight-section{
+    background-color: #0E0E10;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.logo{
+    bottom: 5%;
+    left:2%;
+}
+.para{
+    bottom:5%; 
+    right: 0;
+}
+/*start media header*/
+@media screen and (max-width:1400px){
+    header .no{
+        display: none !important;
+    }    
+    header .yes{
+        display: block !important;
+    }
+    
+}
+@media  screen and (max-width:1007px){
+    .img-section{
+        width: 100% !important;
+    }
+    .about-damien2{
+        margin-top: 20px;
+    }
+    .about-damien2 img{
+        display: none !important;
+    }
+    .insight-section{
+        width: calc(100% / 6);
+        padding: 5px 5px;
+        border-radius: 5px;
+    }
+}
+@media  screen and (max-width:992px){
+    .small{
+        
+        gap: 20px;
+    }
+    nav .contact{
+       display: none;
+    }
+    .navbar-nav{
+        align-items: start !important;
+        gap: 8px;
+    }
+    .contact-res{
+        display: flex !important;
+    }
+    .nav-link.active{
+        padding: 0px;
+        background: transparent;
+    }
+    .navbar-brand{
+        margin-bottom: 12px;
+    }
+    .navbar>.container{
+        align-items: start !important;
+    }
+}
+@media  screen and (max-width:769px){
+    .insight-section{
+        width: calc(49%);
+        padding: 20px;
+    }
+    .insight2{
+        margin: 0 !important;
+    }
+}
+
+
+/*end media header*/
+
+
+/* start time-line section*/
+.year-item{
+    padding: 30px 40px;
+    background-color:#0E0E10;
+    
+    width: calc(50% - 30px);
+    position: relative;
+    z-index: 1;
+}
+.year-item::after{
+    content: '';
+    position: absolute;
+    top:0;
+    right:0;
+    border-right: 250px solid #1C1C21;
+    border-left: 78px solid transparent;
+    border-top: 104px solid #1C1C21;
+    border-bottom: 104px solid transparent;
+    z-index: -1;
+}
+.year-item::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-right: 250px solid transparent;
+    border-left: 78px solid #1C1C21;
+    border-top: 104px solid transparent;
+    border-bottom: 104px solid #1C1C21;
+    z-index: -3;
+}
+
+
+
+
+/* end time-line section*/
+
+/* start media time-line */
+@media screen and (max-width:965px){
+    .year-item{
+        width: calc(100% );
+        margin: auto;
+    }
+    .year{
+        flex-direction: column;
+    }
+}
+
+/* end media time-line*/
+
+
+
+
+
+/* testemonial section*/
+.testmnial-section{
+    position: relative;
+    border-radius: 7px;
+    background-color: #0E0E10;
+    z-index: 1;
+    padding: 15px 25px;
+    width: 32%;
+    
+}
+.arrows{
+
+    border: 1px solid #131316;
+}
+.arrows img {
+    background-color: #1C1C21;
+}
+.arrows2{
+
+    border: 1px solid #131316;
+}
+.arrows2 img {
+    background-color: #1C1C21;
+}
+
+.testmnial-section::after{
+    content: '';
+    top: 0;
+    right: 0;
+    position: absolute;
+    border-right: 100px solid #1C1C21;
+    border-left: 102px solid transparent;
+    border-top: 120px solid #1C1C21;
+    border-bottom: 100px solid transparent;
+    z-index: -1;
+}
+.testmnial-section::before{
+    content: '';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    border-right: 100px solid transparent;
+    border-left: 102px solid #1C1C21;
+    border-top: 120px solid transparent;
+    border-bottom: 100px solid #1C1C21;
+    z-index: -3;
+}
+.social{
+    gap: 3px !important;
+}
+.social img{
+    cursor: pointer;
+}
+
+/* end testemonial section*/
+
+
+
+/* media textemonial*/
+@media screen and (max-width: 1100px){
+    .testemonials-section{
+        flex-direction: column;
+        gap: 12px;
+    }
+    .testmnial-section{
+        width: 100%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 745px){
+    .arrows{
+        display: none !important;
+    }
+    .arrows2{
+        display: flex !important;
+        width: fit-content;
+        margin: auto;
+        margin-top: 20px;
+        
+    }
+    .testemonials-section .testmnial-section:nth-child(2){
+        display: none !important;
+
+    }
+    .testemonials-section .testmnial-section:nth-child(3){
+        display: none !important;
+
+    }
+}
+
+/* end media testemonial*/
+
+
+
+
+
+/*start footer*/
+a{
+    text-decoration: none;
+    color: #fff;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer{
+    margin-top: 150px;
+}
+.footer-section{
+    width: 100%;
+}
+.footer-start{
+    padding: 60px 40px;
+    margin-top: 100px;
+    width: calc(38%);
+    border: 1px solid #1C1C21;
+    
+}
+.footer-end{
+    border: 1px solid #1C1C21;
+    padding: 60px 40px;
+    margin-top: 100px;
+    width: calc(62%);
+}
+.nav-footer{
+    background-color: #000;
+}
+.nav-footer1.social{
+   background-color: #0f0f0f;
+}
+.footer-item ul li {
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+    padding: 0 5px;
+    cursor: pointer;
+}
+.header-end h2 span{
+    background-color: #4A2CED;
+    padding: 5px 30px;
+    border-radius:20px;
+    cursor: pointer;
+}
+/* end footer*/
+
+
+
+/* media footer*/
+@media screen and (max-width:993px){
+    .footer-section{
+        flex-direction: column;
+        gap: 0;
+    }
+    .footer-start{
+        width: 100%;
+    }
+    .footer-end{
+        width: 100%;
+        margin-top: 0;
+    }
+    .navbar-footer{
+        gap: 45px;
+    }
+}
+@media screen and (max-width:738px){
+    .navbar-footer{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:500px){
+    .footer-item:nth-child(2){
+        margin-right: 24px !important;
+    }
+    .footer-item{
+        margin-top: 10px;
+    }
+    .navbar-footer{
+        text-align: center;
+    }
+}
+
+
+/* end media footer*/

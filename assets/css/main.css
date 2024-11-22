@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+:root{
+    --mainfont: "Manrope", sans-serif;
+}
+
+body{
+    
+   background-color:#000;
+   color: #fff;
+   font-family: var(--mainfont);
+}
+
+a{
+    text-decoration: none;
+}
+.nav-link.active{
+    background-color: #131316;
+    border-radius: 10px;
+    padding:10px 20px;
+}
+nav .contact{
+   padding: 5px 0;
+
+}
+
+nav .contact a{
+    color: #fff;
+
+}
+
+
+/*start media header*/
+@media  screen and (max-width:992px){
+        .small{
+            
+            gap: 20px;
+        }
+        nav .contact{
+           display: none;
+        }
+        .navbar-nav{
+            align-items: start !important;
+            gap: 8px;
+        }
+        .contact-res{
+            display: flex !important;
+        }
+        .nav-link.active{
+            padding: 0px;
+            background: transparent;
+        }
+        .navbar-brand{
+            margin-bottom: 12px;
+        }
+        .navbar>.container{
+            align-items: start !important;
+        }
+
+}
+/*end media header*/
+
+
+/*start about section*/
+
+
+
+
+
+
+
+
+
+.image{
+    width: calc((53% - 20px) );
+}
+.information{
+    width: calc((47% - 20px) );
+}
+.cv button{
+    padding: 10px 35px;
+}
+
+/*end about section*/
+
+
+/* media about*/
+@media screen and (max-width:992px){
+    .image{
+        width: 100%;
+    }
+    .information{
+        
+        width: 100%;
+        flex-direction: row !important;
+        margin-top: 10px;
+        gap: 40px !important;
+    }
+    .first{
+        width: calc(100% );
+        padding: 0 !important;
+    }
+    .end{
+        width: calc(45% );
+        padding: 0 !important;
+        
+
+    }
+    .social-media{
+        gap: 10px;
+    }
+    .cv button{
+        width: 100%;
+    }
+    .contact-resp{
+        width: 50%;
+    }
+    
+}
+@media screen and (max-width:768px){
+    .information{
+        flex-direction: column !important;
+    }
+    .first{
+        width: 100%;
+        
+    }
+    .end{
+        width: 100%;
+        
+    }
+    
+   
+}
+@media screen and (max-width:531px){
+    .contact-me{
+        flex-direction: column;
+    gap: 15px;
+    }
+    
+   .cv{
+    width: 100%;
+   }
+}
+@media screen and (max-width:430px){
+   .about-damien .first{
+    flex-direction: column !important;
+    align-items: start !important;
+   }
+   .about{
+    padding-left: 1rem !important;
+   }
+}
+/*end media about*/
+
+
+
+
+/*start service section*/
+.photograph-service{
+    margin-top: 150px;
+}
+.photograph-service .first{
+    margin-bottom: 100px !important;
+}
+
+.arrows img{
+    background-color: #1C1C21;
+    
+    
+}
+.arrows {
+    border: 1px solid #131316;
+}
+.arrows2 img{
+    background-color: #1C1C21;
+    
+    
+}
+.arrows2 {
+    border: 1px solid #131316;
+}
+.service-highlite h3{
+    color: #CACACE;
+}
+.event{
+    width: calc(50%);
+    
+}
+.event-q h2 span img{
+    background-color: #4A2CED;
+    cursor: pointer;
+}
+.highlite-in{
+    align-items: baseline;
+}
+.highlite-in span{
+    color: #AFB0B6;
+}
+.image{
+    width: calc(48%);
+}
+.highlite-in{
+    background-color: #000;
+    border :1px solid #131316;
+    border-radius: 5px;
+    
+}
+
+/* end service section*/
+
+
+
+/*media service*/
+@media screen and (max-width:996px){
+    .second{
+        flex-direction: column-reverse;
+        gap: 50px !important;
+    }
+    .image{
+        text-align: center;
+        width: 100%;
+    }
+    .event{
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+    .arrows{
+        display: none !important;
+    }
+    .arrows2{
+        display: flex !important;
+       
+        width: fit-content;
+        margin: auto;
+        margin-top: 20px ;
+        
+    }
+}
+
+/*end media service*/
+
+/*start explore section*/
+.photography-explore{
+    margin-bottom: 100px;
+}
+.explore{
+    margin-top: 200px;
+    
+}
+
+.photo-explore{
+    width: calc(31%);
+}
+.view .ex{
+    box-shadow: 0 1px 2px rgba(84, 80, 80, 0.3);
+    padding: 0 5px;
+    cursor: pointer;
+}
+.explore .photography-explore .photo-explore.none1{
+    display: none !important;
+}
+ .explore .photography-explore .photo-explore.active1{
+    display: block !important;
+}
+/* end explore section*/
+
+/*media explore*/
+@media screen and (max-width:992px)  {
+    .photography-explore{
+        flex-direction: column;
+    }
+    .photo-explore{
+        width: 100% !important;
+    }
+    .img-explore img{
+        width: 100%;
+    }
+}
+@media screen and (max-width:744px)  {
+    .photography-explore .photo-explore:nth-child(2)
+    ,.photography-explore .photo-explore:nth-child(3){
+        display: none !important;
+    }
+}
+@media screen and (max-width:500px) {
+    .arrows{
+        display: none !important;
+    }
+    .arrows2{
+        display: flex !important;
+       
+        width: fit-content;
+        margin: auto;
+        margin-top: 20px ;
+        
+    }
+}
+
+/* end media explore*/
+/*start question section*/
+.accordion-button{
+    padding: 40px 10px;
+    
+}
+.accordion-button:not(.collapsed){
+    background-color: #1C1C21 ;
+}
+.accordion.container{
+    padding: 0 !important;
+}
+.second2{
+    margin-top: 50px;
+}
+.social{
+    gap: 3px;
+
+}
+.social img{
+    cursor: pointer;
+}
+
+
+/*end question section*/
+/*media question*/
+
+@media screen and (max-width:968px){
+    .second2{
+        flex-direction: column;
+    }   
+    .left{
+        width: 100% !important;
+        
+    } 
+    .right{
+        width: 100% !important;
+    }
+}
+/*end media question*/
+
+
+/* testemonial section*/
+.testmnial-section{
+    position: relative;
+    border-radius: 7px;
+    background-color: #0E0E10;
+    z-index: 1;
+    padding: 15px 25px;
+    width: 32%;
+    
+}
+
+.testmnial-section::after{
+    content: '';
+    top: 0;
+    right: 0;
+    position: absolute;
+    border-right: 100px solid #1C1C21;
+    border-left: 102px solid transparent;
+    border-top: 120px solid #1C1C21;
+    border-bottom: 100px solid transparent;
+    z-index: -1;
+}
+.testmnial-section::before{
+    content: '';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    border-right: 100px solid transparent;
+    border-left: 102px solid #1C1C21;
+    border-top: 120px solid transparent;
+    border-bottom: 100px solid #1C1C21;
+    z-index: -3;
+}
+.social{
+    gap: 3px !important;
+}
+
+/* end testemonial section*/
+
+
+
+/* media testemonial*/
+@media screen and (max-width: 1100px){
+    .testemonials-section{
+        flex-direction: column;
+        gap: 12px;
+    }
+    .testmnial-section{
+        width: 100%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 745px){
+    .arrows{
+        display: none !important;
+    }
+    .arrows2{
+        display: flex !important;
+        width: fit-content;
+        margin: auto;
+        margin-top: 20px;
+        
+    }
+    .testemonials-section .testmnial-section:nth-child(2){
+        display: none !important;
+
+    }
+    .testemonials-section .testmnial-section:nth-child(3){
+        display: none !important;
+
+    }
+   
+}
+
+/* end media testemonial*/
+
+
+
+/*start footer*/
+.footer{
+    margin-top: 150px;
+}
+.footer-section{
+    width: 100%;
+}
+.footer-start{
+    padding: 60px 40px;
+    margin-top: 100px;
+    width: calc(38%);
+    border: 1px solid #1C1C21;
+    
+}
+.footer-end{
+    border: 1px solid #1C1C21;
+    padding: 60px 40px;
+    margin-top: 100px;
+    width: calc(62%);
+}
+.nav-footer{
+    background-color: #000;
+}
+.nav-footer1.social{
+   background-color: #0f0f0f;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #Fff;
+}
+.footer-item ul li{
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+    padding: 0 5px;
+    cursor: pointer;
+}
+.header-end h2 span{
+    background-color: #4A2CED;
+    padding: 5px 30px;
+    border-radius:20px;
+    cursor: pointer;
+}
+/* end footer*/
+
+.testemonial .testemonials-section  .active12{
+    display: flex !important;
+}
+.testemonial .testemonials-section .none{
+    display: none !important;
+}
+
+/* media footer*/
+@media screen and (max-width:993px){
+    .footer-section{
+        flex-direction: column;
+        gap: 0;
+    }
+    .footer-start{
+        width: 100%;
+    }
+    .footer-end{
+        width: 100%;
+        margin-top: 0;
+    }
+    .navbar-footer{
+        gap: 45px;
+    }
+}
+@media screen and (max-width:738px){
+    .navbar-footer{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:500px){
+    .footer-item:nth-child(2){
+        margin-right: 24px !important;
+    }
+    .footer-item{
+        margin-top: 10px;
+    }
+    .navbar-footer{
+        text-align: center;
+    }
+}
+
+
+/* end media footer*/
+
+
